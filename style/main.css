@@ -1,0 +1,22 @@
+.main-container .profile-image img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.profile{
+    display: flex;
+    margin-top: 2em;
+    margin-left: 80px;
+    font-size: 20px;
+    color: var(--color-midnight-green);
+}
+
+.profile-content{
+    margin: 72px 0px 0px 30px;
+    font-weight: 600;
+}
+
+.profile-content .name{
+    font-size: 25px;
+    margin-top: 10px;
+}

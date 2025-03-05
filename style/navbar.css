@@ -1,0 +1,30 @@
+body{
+    background-color: var(--color-platinium);
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.navigation{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+.navigation__content ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+   
+}
+
+.navigation__content a{
+    display: flex;
+    align-items: center; 
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--color-midnight-green)
+}
+
+
+
+
+
