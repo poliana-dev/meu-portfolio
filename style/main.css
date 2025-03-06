@@ -56,6 +56,7 @@
 .main-content__project section .project-title{
     font-weight: 700;
     font-size: 25px ;
+    color: var(--color-midnight-green);
 }
 
 section .project-subtitle{

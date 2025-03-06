@@ -4,6 +4,7 @@
     margin-top: 1em;
     margin-bottom: 1em;
     font-weight: 500;
+    
 }
 
 .navigation__content ul{
@@ -19,6 +20,21 @@
     gap: 0.5rem;
     text-decoration: none;
     color: var(--color-midnight-green)
+}
+
+.navigation__content ul li button {
+    border: none;
+    background-color: var(--color-platinium);
+    font-size: 16px;
+    padding: 8px 16px; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Para cantos levemente arredondados */
+    transition: background-color 0.3s ease, border-radius 0.3s ease; /* Suaviza a transição */
+    cursor: pointer;
+}
+
+.navigation__content ul li button:hover {
+    background-color: var(--color-rosy-brown);
+    border-radius: 20px;
 }
 
 
