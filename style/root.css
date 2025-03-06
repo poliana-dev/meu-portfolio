@@ -1,0 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+body{
+    background-color: var(--color-platinium);
+    font-family: 'Nunito Sans';
+}
+
+:root{
+    --color-platinium: #DDE5E1;
+    --color-midnight-green: #023C40;
+    --color-rosy-brown: #C3979F;
+    
+}
