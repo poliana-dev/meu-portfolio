@@ -1,0 +1,88 @@
+
+.main-content__project .project-card{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    height: 200px;
+}
+
+.main-content__project .project-card .card{
+    position: relative; 
+    border:1px solid black;
+    border-radius: 10px; 
+    background-color: var(--color-platinium); 
+}
+
+.card .card__header, .card__body{
+    margin: 20px 0px 20px 10px;
+}
+
+.card .card__header .card-title{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card__header .card-title a{
+    text-decoration: none;
+}
+
+.card-title a .card-link{
+    font-size: 25px;  
+}
+
+.card__body .label ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4px;
+    cursor: default;
+}
+
+.card__body .label li{
+    display: flex;
+    gap: 6px;
+      
+}
+
+.card__body .label li div{
+    border: 1px solid var(--color-midnight-green);
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    background-color:#CFCFCF;
+      
+}
+
+
+/* tratamento em caso o span do git não funcione */
+.card-link::before {
+    content: "📂"; 
+    font-size: 25px;
+    display: inline-block;
+    visibility: hidden;
+}
+
+.card-link:before {
+    visibility: visible; 
+}
+
+
+/* Efeito de hover: fundo maior atrás do card */
+.card.hovered::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-color: var(--color-rosy-brown);
+    border-radius: 15px;
+    z-index: -1; /* Coloca o fundo atrás do card */
+    transition: all 0.3s ease-in-out; /* Suaviza a transição */
+}
+
+
+
+
