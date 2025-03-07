@@ -22,7 +22,7 @@
     color: var(--color-midnight-green)
 }
 
-.navigation__content ul li button {
+.navigation__content ul li div {
     border: none;
     background-color: var(--color-platinium);
     font-size: 16px;
@@ -32,7 +32,7 @@
     cursor: pointer;
 }
 
-.navigation__content ul li button:hover {
+.navigation__content ul li div:hover {
     background-color: var(--color-rosy-brown);
     border-radius: 20px;
 }
