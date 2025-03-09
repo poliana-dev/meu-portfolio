@@ -1,17 +1,22 @@
 
-.main-content__project .project-card{
+
+.main-content__project .project-card, .track-card{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1fr ;
     height: 200px;
+    justify-items: center;
+    
 }
 
-.main-content__project .project-card .card{
+
+
+.main-content__project .project-card .card, .track-card .card{
     position: relative; 
     border:1px solid black;
     border-radius: 10px; 
     background-color: var(--color-platinium); 
+    width: 400px;
 }
 
 .card .card__header, .card__body{
@@ -84,5 +89,34 @@
 }
 
 
+
+
+.badge {
+    display: inline-block;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-left: 5px;
+    position: relative;
+    top: -5px;
+    bottom: 10px
+
+
+}
+
+.badge.beta {
+    background-color: #e67e22; /* Laranja para destacar */
+}
+
+.badge.stable{
+    background-color: #4CAF50;
+}
+
+.badge.lab{
+    background-color: #2196F3;
+    top: 3px;
+}
 
 

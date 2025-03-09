@@ -44,17 +44,17 @@
 
 .main-content{
     margin-top: 4em;
-    margin-bottom: 4em;
+
 }
 
-.main-content .main-content__project section{
+.main-content__project section, .main-content__track section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.main-content__project section .title{
+.main-content__project section .title, .main-content__track section .title{
     font-weight: 700;
     font-size: 25px ;
     color: var(--color-midnight-green);
@@ -62,4 +62,8 @@
 
 section .subtitle{
     margin-top: 10px;
+}
+
+.main-content__project, .main-content__track{
+    padding: 10px 0px 200px 0px;
 }
