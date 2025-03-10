@@ -10,12 +10,14 @@
 
 .track-card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    overflow-y: auto;
     position: relative;
-    padding: 10px 10px 10px 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    overflow-y: auto;
+    
 }
+
+
 
 .track-card::-webkit-scrollbar {
     display: none;
@@ -29,7 +31,11 @@
     border-radius: 10px; 
     background-color: var(--color-platinium); 
     width: 400px;
+    z-index: 1;
+    margin: 30px 20px 20px 20px;
 }
+
+
 
 .card .card__header, .card__body{
     margin: 20px 0px 20px 10px;
@@ -86,22 +92,12 @@
 }
 
 
-/* Efeito de hover: fundo maior atrás do card */
-.card.hovered::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    background-color: var(--color-rosy-brown);
-    border-radius: 15px;
-    z-index: -1; /* Coloca o fundo atrás do card */
-    transition: all 0.3s ease-in-out; /* Suaviza a transição */
+.card.hovered {
+    transform: translateY(-10px) scale(1.05); /* Levanta e aumenta */
+    transition: all 0.2s ease-in-out; 
+    outline: 10px solid var(--color-rosy-brown);
+
 }
-
-
-
 
 .badge {
     display: inline-block;
@@ -136,5 +132,3 @@
     margin-top: 1em;
     font-weight: 300;
 }
-
-
