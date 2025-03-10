@@ -4,9 +4,21 @@
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    height: 200px;
     justify-items: center;
     
+}
+
+.track-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    overflow-y: auto;
+    position: relative;
+    padding: 10px 10px 10px 10px;
+}
+
+.track-card::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -117,6 +129,12 @@
 .badge.lab{
     background-color: #2196F3;
     top: 3px;
+}
+
+.doc__link{
+    font-style: italic;
+    margin-top: 1em;
+    font-weight: 300;
 }
 
 
