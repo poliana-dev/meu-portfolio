@@ -10,22 +10,20 @@
 
 .track-card {
     display: grid;
-    position: relative;
+    position:relative;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    overflow-y: auto;
-    
+    overflow-y:scroll;  
+    max-height: 500px;   
 }
-
 
 
 .track-card::-webkit-scrollbar {
     display: none;
 }
+ 
 
-
-
-.main-content__project .project-card .card, .track-card .card{
+.project-card .card, .track-card .card{
     position: relative; 
     border:1px solid black;
     border-radius: 10px; 
@@ -51,7 +49,7 @@
     text-decoration: none;
 }
 
-.card-title a .card-link{
+.card-title a .badge-git{
     font-size: 25px;  
 }
 
@@ -78,16 +76,63 @@
       
 }
 
+.card-button{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
+}
+
+
+.card-button .btn{
+    position: relative;
+    border: 1px solid var(--color-rosy-brown);
+    color: var(--color-midnight-green);
+    padding: 8px 8px 8px 8px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 1;
+   
+   
+}
+
+.card-button .btn::before{
+    transition: 0.5s all ease;
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: var(--color-rosy-brown);
+    z-index: -1;
+  
+}
+
+/* .card-button .btn:hover, .btn:focus{
+    color:;
+} */
+
+.btn:hover::before, .btn:focus::before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
 
 /* tratamento em caso o span do git não funcione */
-.card-link::before {
+.badge-git::before {
     content: "📂"; 
     font-size: 25px;
     display: inline-block;
+    position: relative;
+    top: 4px;
     visibility: hidden;
 }
 
-.card-link:before {
+.badge-git:before {
     visibility: visible; 
 }
 
@@ -129,6 +174,6 @@
 
 .doc__link{
     font-style: italic;
-    margin-top: 1em;
+    padding-top: 20px;
     font-weight: 300;
 }
